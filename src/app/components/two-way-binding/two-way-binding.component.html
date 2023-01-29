@@ -1,0 +1,14 @@
+<div class="class">
+    <h2>Two Way Binding</h2>
+    <form>
+        <input type="text" [(ngModel)]="name" name="name" placeholder="Digite o seu nome">
+        <input type="text" [(ngModel)]="password" name="password" placeholder="Digite sua senha">
+        <input type="submit" value="Enviar">
+    </form>
+    <div *ngIf="name !== ''">
+        <p>O nome é: {{name}}</p>
+    </div>
+    <div *ngIf="password !== ''">
+        <p>A senha é: {{password}}</p>
+    </div>
+</div>
